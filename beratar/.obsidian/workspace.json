@@ -11,26 +11,14 @@
             "id": "12afc14425cde2d5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Q5 2026-27/Q5-overzicht.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
-            }
-          }
-        ]
-      },
-      {
-        "id": "421f780e42bf71be",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4362dbf075a950cd",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "title": "Q5-overzicht"
             }
           }
         ]
@@ -203,8 +191,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "fd70047fbb0213e2",
+  "active": "12afc14425cde2d5",
   "lastOpenFiles": [
+    "Q5 2026-27/DSAIT4010 Probabilistic AI (resit)/links.md",
+    "Q5 2026-27/Q5-overzicht.md",
     "Untitled",
     "Welcome.md"
   ]
