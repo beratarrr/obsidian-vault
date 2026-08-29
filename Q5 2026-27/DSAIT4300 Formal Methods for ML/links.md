@@ -9,3 +9,4 @@ _Directe links naar Brightspace. Bestanden staan (na download) in de map **Mater
 ## Externe bronnen
 
 - [Tutorial 1: SMT verification (Colab/Z3)](https://colab.research.google.com/github/philzook58/z3_tutorial/blob/master/Z3%20Tutorial.ipynb)
+gith
