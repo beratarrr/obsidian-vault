@@ -7,7 +7,7 @@ _Gegenereerd uit Brightspace op 29 aug 2026. Tijden in Amsterdam-tijd. Controlee
 - **DSAIT4315** Performance Analysis — wekelijkse opgaven + tentamen
 - **DSAIT4300** Formal Methods for ML — projectpaper (proposal → draft → final)
 - **DSAIT4305** Graph Machine Learning — project (proposal → final)
-- **DSAIT4010** Probabilistic AI and Reasoning (resit) — geen eigen agenda; tentamen via centraal rooster
+- **DSAIT4010** Probabilistic AI and Reasoning — geen eigen agenda; tentamen via centraal rooster
 
 ## Alle deadlines chronologisch
 
@@ -70,5 +70,5 @@ Projectgebaseerd met lab-onderdelen.
 - Final project — maandag 9 nov 2026, 23:59
 - Resit signup — dinsdag 24 nov 2026, 17:00
 
-### DSAIT4010 Probabilistic AI and Reasoning (resit)
+### DSAIT4010 Probabilistic AI and Reasoning
 Geen deadlines in de Brightspace-agenda. Materiaal bevat oefententamens en oude tentamens (2024-25, 2025-26). Tentamendatum loopt via het centrale rooster — nog te bevestigen via My Timetable / Osiris.
