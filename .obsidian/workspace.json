@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Q5 2026-27/DSAIT4300 Formal Methods for ML/Aantekeningen/Lecture 1.md",
+                "file": "Projects/CS2-Arbitrage-Bot/system-design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 1"
+              "title": "system-design"
             }
           }
         ]
@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1125e4b88205b5b0",
@@ -159,7 +160,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Q5 2026-27/DSAIT4300 Formal Methods for ML/Aantekeningen/Lecture 1.md",
+                "file": "Projects/CS2-Arbitrage-Bot/system-design.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -188,9 +189,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fd70047fbb0213e2",
+  "active": "5de795936a7f8112",
   "lastOpenFiles": [
     "Projects/CS2-Arbitrage-Bot/M0-checklist.md",
+    "Projects/CS2-Arbitrage-Bot/system-design.md",
+    "Q5 2026-27/DSAIT4300 Formal Methods for ML/Aantekeningen/Lecture 1.md",
     "Q5 2026-27/School-Q5-deadlines.ics",
     "Q5 2026-27/Q5-overzicht.md",
     "Q5 2026-27/DSAIT4315 Performance Analysis/links.md",
@@ -200,11 +203,9 @@
     "Q5 2026-27/DSAIT4300 Formal Methods for ML/links.md",
     "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/links.md",
     "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning",
-    "Projects/CS2-Arbitrage-Bot/system-design.md",
     "Projects/CS2-Arbitrage-Bot",
     "Projects",
     "0052.pdf",
-    "Q5 2026-27/DSAIT4300 Formal Methods for ML/Aantekeningen/Lecture 1.md",
     "00299-NeustroevG.pdf",
     "Untitled.canvas",
     "2026-08-31.md",
