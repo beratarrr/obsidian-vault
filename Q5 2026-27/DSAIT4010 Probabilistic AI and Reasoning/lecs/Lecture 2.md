@@ -16,5 +16,7 @@ Even de vorige lectures door doornemen, readings ook listen en doornemen
 - [ ] try the homework questions (formative, no credit)
 **After the lecture (optional)**
 - [ ] read the Silver et al _AlphaGo_ paper (2016)
-#### Heuristic search
+### Heuristic search
+
+### MCTS; monte carlo tree search
 
