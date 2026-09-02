@@ -1,15 +1,15 @@
 glearning = graph learning
 ##### Graph construction
-graph G= (V,E), **lecture heeft gekke letters even die overnemen**
+graph G= (V,E)
 - V=set of nodes
 - connected by a set of edges E = {(i,j)}
 
 ##### Types of nets
-- **Physical networks - edges are alreadyt availabe**
+- **Physical networks - edges are already available**
 	- Road network
 	- Robot networks
 	- Brain networks
-- **Abstract net - build proximity struture from data points**
+- **Abstract net - build proximity structure from data points**
 	- 
 - **Correlation networks**
 	- Pearson correlation - correlate datapoints provide information to eachother
