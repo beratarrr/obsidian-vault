@@ -1,4 +1,5 @@
 Even de vorige lectures door doornemen, readings ook listen en doornemen
+- **Grote deel is herhaling maar even overheen scannen en die readings doen is important**
 - explain the role of uninformed and informed heuristic search in AI, including the stating the use of minimax search in Deep Blue and MCTS in AlphaGo
 - contrast how A* algorithm differs from greedy best-first first and uniform cost search
 - apply the A* algorithm, including creating an admissible heuristic especially from a relaxation
