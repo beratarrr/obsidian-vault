@@ -1,3 +1,4 @@
+glearning = graph learning
 ##### Graph construction
 graph G= (V,E), **lecture heeft gekke letters even die overnemen**
 - V=set of nodes
@@ -16,8 +17,8 @@ graph G= (V,E), **lecture heeft gekke letters even die overnemen**
 - **k-nearest neighbourhood networks**
 
 ##### Two key axes of glearning
-- Learning signal: semi/un/supervised
-- Generalization setting: trans/inductive
+- **Learning signal:** semi/un/supervised
+- **Generalization setting:** trans/inductive
 	- **Even dit begrijpen**
 
 
