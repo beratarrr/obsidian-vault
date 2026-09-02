@@ -13,8 +13,8 @@ graph G= (V,E), **lecture heeft gekke letters even die overnemen**
 	- 
 - **Correlation networks**
 	- Pearson correlation - correlate datapoints provide information to eachother
-- **epsilon neighbourhood graphs**
-- **k-nearest neighbourhood networks**
+- **Epsilon neighbourhood graphs**
+- **K-nearest neighbourhood networks**
 
 ##### Two key axes of glearning
 - **Learning signal:** semi/un/supervised
