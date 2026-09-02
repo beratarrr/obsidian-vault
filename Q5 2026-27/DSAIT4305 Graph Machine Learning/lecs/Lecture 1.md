@@ -19,7 +19,7 @@ graph G= (V,E), **lecture heeft gekke letters even die overnemen**
 ##### Two key axes of glearning
 - Learning signal: semi/un/superverised
 - Generilzation setting: trans/inductive
-
+	- 
 
 
 classical approach to learning over nods
