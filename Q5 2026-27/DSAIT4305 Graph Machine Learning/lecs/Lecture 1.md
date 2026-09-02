@@ -5,9 +5,9 @@ graph G= (V,E)
 - connected by a set of edges E = {(i,j)}
 
 ##### Types of nets
-- **Physical networks - edges are already available**
-	- Road network
-	- Robot networks
+- **Physical networks - edges literally exist**
+	- Road network, streets exist
+	- Robot networks, 
 	- Brain networks
 - **Abstract net - build proximity structure from data points**
 	- 
