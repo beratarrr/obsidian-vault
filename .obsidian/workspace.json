@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Q5 2026-27/DSAIT4300 Formal Methods for ML/lecs/Lecture 1.md",
+                "file": "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 1.md",
                 "mode": "source",
                 "source": false
               },
@@ -159,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Q5 2026-27/DSAIT4300 Formal Methods for ML/lecs/Lecture 1.md",
+                "file": "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -193,13 +193,16 @@
   },
   "active": "5de795936a7f8112",
   "lastOpenFiles": [
+    "PDF's/Lecture_1.pdf",
+    "Excalidraw/Drawing 2026-09-02 17.15.48.excalidraw.md",
+    "Excalidraw",
+    "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 1.md",
+    "Q5 2026-27/DSAIT4300 Formal Methods for ML/lecs/Lecture 1.md",
     "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/lecs/Lecture 2.md",
     "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/lecs/Lecture 1.md",
     "PDF's",
-    "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 1.md",
     "Untitled.base",
     "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/lecs",
-    "Q5 2026-27/DSAIT4300 Formal Methods for ML/lecs/Lecture 1.md",
     "Q5 2026-27/DSAIT4305 Graph Machine Learning/links.md",
     "Q5 2026-27/DSAIT4300 Formal Methods for ML/lecs",
     "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs",
@@ -213,8 +216,6 @@
     "Q5 2026-27/DSAIT4305 Graph Machine Learning",
     "Q5 2026-27/DSAIT4300 Formal Methods for ML/links.md",
     "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/links.md",
-    "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning",
-    "Projects/CS2-Arbitrage-Bot",
     "Untitled.canvas",
     "2026-08-31.md",
     "().md",
