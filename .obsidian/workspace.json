@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/CS2-Arbitrage-Bot/system-design.md",
+                "file": "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "system-design"
+              "title": "Lecture 1"
             }
           }
         ]
@@ -83,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1125e4b88205b5b0",
@@ -160,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/CS2-Arbitrage-Bot/system-design.md",
+                "file": "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -178,6 +177,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -191,14 +191,18 @@
   },
   "active": "5de795936a7f8112",
   "lastOpenFiles": [
-    "Projects/CS2-Arbitrage-Bot/M0-checklist.md",
+    "Q5 2026-27/DSAIT4300 Formal Methods for ML/lecs/Lecture 1.md",
+    "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 1.md",
+    "Q5 2026-27/DSAIT4305 Graph Machine Learning/links.md",
+    "Q5 2026-27/DSAIT4300 Formal Methods for ML/lecs",
+    "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs",
     "Projects/CS2-Arbitrage-Bot/system-design.md",
+    "Projects/CS2-Arbitrage-Bot/M0-checklist.md",
     "Q5 2026-27/DSAIT4300 Formal Methods for ML/Aantekeningen/Lecture 1.md",
     "Q5 2026-27/School-Q5-deadlines.ics",
     "Q5 2026-27/Q5-overzicht.md",
     "Q5 2026-27/DSAIT4315 Performance Analysis/links.md",
     "Q5 2026-27/DSAIT4315 Performance Analysis",
-    "Q5 2026-27/DSAIT4305 Graph Machine Learning/links.md",
     "Q5 2026-27/DSAIT4305 Graph Machine Learning",
     "Q5 2026-27/DSAIT4300 Formal Methods for ML/links.md",
     "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/links.md",
@@ -210,8 +214,6 @@
     "Untitled.canvas",
     "2026-08-31.md",
     "().md",
-    "Q5 2026-27/DSAIT4300 Formal Methods for ML/Aantekeningen",
-    "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/Tentamens",
     "Q5 2026-27/DSAIT4010 Probabilistic AI (resit)/links.md",
     "Welcome.md"
   ]
