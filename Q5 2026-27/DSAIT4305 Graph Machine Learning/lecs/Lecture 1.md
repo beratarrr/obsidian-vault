@@ -19,7 +19,7 @@ graph G= (V,E)
 ##### Two key axes of glearning
 - **Learning signal:** semi/un/supervised
 - **Generalization setting:** trans/inductive
-	- **Even dit begrijpen**
+	- Transductive: Have 1 graph, all nodes and edges are visible to the model during training but some of the nodes have lables and some don't. Transductive is when you try to find the labels of nodes with
 
 
 classical approach to learning over nodes
