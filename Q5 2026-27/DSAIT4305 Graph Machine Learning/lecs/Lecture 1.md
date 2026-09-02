@@ -1,5 +1,4 @@
-Graph construction
-
+##### Graph construction
 graph G= (V,E), **lecture heeft gekke letters even die overnemen**
 - V=set of nodes
 - connected by a set of edges E = {(i,j)}
@@ -17,9 +16,9 @@ graph G= (V,E), **lecture heeft gekke letters even die overnemen**
 - **k-nearest neighbourhood networks**
 
 ##### Two key axes of glearning
-- Learning signal: semi/un/superverised
-- Generilzation setting: trans/inductive
-	- 
+- Learning signal: semi/un/supervised
+- Generalization setting: trans/inductive
+	- **Even dit begrijpen**
 
 
-classical approach to learning over nods
+classical approach to learning over nodes
