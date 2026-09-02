@@ -2,5 +2,8 @@
   "obsidian-git",
   "templater-obsidian",
   "dataview",
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "obsidian-excalidraw-plugin",
+  "obsidian-tasks-plugin",
+  "obsidian-icon-folder"
 ]
