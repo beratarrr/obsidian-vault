@@ -35,4 +35,6 @@ classical approach to learning over nodes
 
 - **Matrix stuff**
 	- Transition matrix P: row normalized adjacency, row i tells you the prob of stepping to each neighbour from node i
-	- Modified transition matrix: same as P, except labelled node rows are replaced by the identity -> which encodes; o
+	- Modified transition matrix: same as P, except labelled node rows are replaced by the identity -> which encodes; once the walker hits a labelled node, its stuck there forever
+	- Update rule: $Y^(t+1) = P̃ Y^(t)$, after t steps: $Y^(t) = P̃^t Y^(0)$. Each row of Y is prob distribution over labels, Y^(0) has one hot rows for labelled nodes and zero rows for unlabelled ones
+	- 
