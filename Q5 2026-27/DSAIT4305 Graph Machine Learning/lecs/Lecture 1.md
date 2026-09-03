@@ -34,3 +34,5 @@ classical approach to learning over nodes
 - $Pr(y_v = c) = Σ_w Pr(walk from v reaches w)$ summed over label nodes w with label c
 
 - **Matrix stuff**
+	- Transition matrix P: row normalized adjacency, row i tells you the prob of stepping to each neighbour from node i
+	- Modified transition matrix: same as P, except labelled node rows are replaced by the identity -> which encodes; o
