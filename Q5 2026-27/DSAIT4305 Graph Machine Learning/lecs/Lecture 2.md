@@ -8,12 +8,13 @@ Idea is to embed similar nodes closer to eachother in the embedding space -> how
 
 encoder = lookup table producing an embedding per node
 ![[Pasted image 20260903183238.png|404]]
-decoder = a function that tries to reconstruct some notion of similarity from the embedsÍ
+decoder = a function that tries to reconstruct some notion of similarity from the embeds
 
 **Shallow encoding**
 - Very simple type of encoding where you just look up the column of a specific node in the embedding matrix and just take that as your vector
 - In the same spirit the decoder also is shallow, it just performs a dot product between 2 vectors to predict their similarity, with no learnable params of its own
+![[Pasted image 20260903184118.png|397]]
 
 
-![[Pasted image 20260903184118.png]]
-#### Random walk embeddings
+#### Random walk based methods
+An embedding strategy using random walk is to run short fixed-length random walks starting fro meach node in the graph
