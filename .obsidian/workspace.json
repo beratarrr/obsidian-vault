@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/CS2-Arbitrage-Bot/M0-checklist.md",
+                "file": "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "M0-checklist"
+              "title": "Lecture 1"
             }
           }
         ]
@@ -159,7 +159,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/CS2-Arbitrage-Bot/M0-checklist.md",
+                "file": "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -193,8 +193,8 @@
   },
   "active": "5de795936a7f8112",
   "lastOpenFiles": [
-    "Projects/CS2-Arbitrage-Bot/system-design.md",
     "Projects/CS2-Arbitrage-Bot/M0-checklist.md",
+    "Projects/CS2-Arbitrage-Bot/system-design.md",
     "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 1.md",
     "PDF's/Lecture_1.pdf",
     "Excalidraw/Drawing 2026-09-02 17.15.48.excalidraw.md",

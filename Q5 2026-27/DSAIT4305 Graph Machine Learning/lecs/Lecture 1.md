@@ -26,3 +26,6 @@ graph G= (V,E)
 
 
 classical approach to learning over nodes
+
+##### Label propagation
+- Assigns c the label that is most reachable from v through the graph
