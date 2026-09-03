@@ -18,3 +18,5 @@ decoder = a function that tries to reconstruct some notion of similarity from th
 
 #### Random walk based methods
 An embedding strategy using random walk is to run short fixed-length random walks starting fro meach node in the graph
+For each node we collect the multiset of nodes visited on random walks starting from the initial node
+Given the initial node, we want to learn a representation that are predictive of the nodes in its random walk neighbourhood
