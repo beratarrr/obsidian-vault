@@ -29,3 +29,8 @@ classical approach to learning over nodes
 
 ##### Label propagation
 - Assigns c the label that is most reachable from v through the graph
+- At each step every node updates their belief by averaging what their neighbours currently believe.
+- In a random walk snse, starting at node v, walinkt the graph one edge at a time, the prob that v gets label c is the prob that a walk from v eventually lands on a labelled node with label c
+- $Pr(y_v = c) = Σ_w Pr(walk from v reaches w)$ summed over label nodes w with label c
+
+- **Matrix stuff**
