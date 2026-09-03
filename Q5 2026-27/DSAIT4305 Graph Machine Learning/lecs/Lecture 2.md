@@ -12,3 +12,8 @@ decoder = a function that tries to reconstruct some notion of similarity from th
 
 **Shallow encoding**
 - Very simple type of encoding where you just look up the column of a specific node in the embedding matrix and just take that as your vector
+- In the same spirit the decoder also is shallow, it just performs a dot product between 2 vectors to predict their similarity, with no learnable params of its own
+
+
+![[Pasted image 20260903184118.png]]
+#### Random walk embeddings
