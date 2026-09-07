@@ -11,12 +11,14 @@
             "id": "5de795936a7f8112",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20260903184118.png"
+                "file": "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/lecs/Lecture 1.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20260903184118"
+              "icon": "lucide-file",
+              "title": "Lecture 1"
             }
           }
         ]
@@ -191,6 +193,7 @@
   },
   "active": "5de795936a7f8112",
   "lastOpenFiles": [
+    "Pasted image 20260903184118.png",
     "Pasted image 20260903183136.png",
     "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/lecs/Lecture 1.md",
     "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/lecs/Lecture 2.md",
@@ -201,7 +204,6 @@
     "Projects/CS2-Arbitrage-Bot/M0-checklist.md",
     "Projects/CS2-Arbitrage-Bot/system-design.md",
     "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 2.md",
-    "Pasted image 20260903184118.png",
     "Pasted image 20260903183238.png",
     "Pasted image 20260903183114.png",
     "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 1.md",
