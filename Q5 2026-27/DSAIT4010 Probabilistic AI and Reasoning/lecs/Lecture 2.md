@@ -6,6 +6,8 @@ Even de vorige lectures door doornemen, readings ook listen en doornemen
 - apply the MCTS algorithm on simple examples, and discuss its advantages and disadvantages compared with minimax search
 - discuss the role of machine learning in creating heuristics, especially in game tree search
 
+Exercise 1
+
 **Before the lecture (recommended)**
  - [ ] read Miller's intro to MCTS
 **Before the lecture (optional)**
