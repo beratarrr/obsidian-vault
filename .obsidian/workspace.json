@@ -11,14 +11,12 @@
             "id": "5de795936a7f8112",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/lecs/Lecture 1.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20260903184118.png"
               },
-              "icon": "lucide-file",
-              "title": "Lecture 1"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260903184118"
             }
           }
         ]
@@ -193,8 +191,9 @@
   },
   "active": "5de795936a7f8112",
   "lastOpenFiles": [
-    "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/lecs/Lecture 2.md",
+    "Pasted image 20260903183136.png",
     "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/lecs/Lecture 1.md",
+    "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/lecs/Lecture 2.md",
     "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/links.md",
     "Q5 2026-27/DSAIT4010 Probabilistic AI and Reasoning/lecs/Lecture 3.md",
     "Q5 2026-27/DSAIT4300 Formal Methods for ML/lecs/Lecture 2.md",
@@ -204,7 +203,6 @@
     "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 2.md",
     "Pasted image 20260903184118.png",
     "Pasted image 20260903183238.png",
-    "Pasted image 20260903183136.png",
     "Pasted image 20260903183114.png",
     "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 1.md",
     "PDF's/Lecture_1.pdf",
