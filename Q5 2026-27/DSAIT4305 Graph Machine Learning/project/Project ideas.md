@@ -61,3 +61,13 @@ These three papers alone cover most of two team members' "2 papers each" require
 **Metrics:** MAPE, Spearman rank correlation (matters more than absolute error if this were used for architecture search), R².
 
 **Risk to flag to the group:** if the timed-ground-truth collection on DAIC slips, you still have a full project on NAS-Bench data alone — treat your own timings as a stretch goal, not the load-bearing part.
+
+
+
+So i basically have 2 ideas, the first one is to train a small model to 
+
+So basically one idea is to train a small model to predict how fast a neural network will run (or how much memory it'll use) just by looking at its structure, without actually running it. Like right now if you wanna know if a model's gonna be too slow or too big for the GPU, you just gotta run it and see. This flips that, you feed the model's shape (basically a flowchart of all its operations) into a smaller predictor model and it just guesses the runtime/memory. There's already  research on this (Microsoft has a paper literally called DNNPerf doing this exact thing) so we're not inventing this from scratch, which makes the lit review a bit easier.
+
+The second one is about keeping live predictions updated without recomputing everything from scratch every time something changes.  for example a traffic map with sensors etc updating every 2 seconds, it 
+
+Think a live traffic map with sensors updating every few seconds — dumb way to do it is recompute predictions for the WHOLE map every single time one sensor changes, which is way too slow. Smart way is to only update the part of the map actually affected by that one change. Same idea applies to any live/streaming graph data. This one's actually got fresh research behind it too, papers from like the last year (Ripple, STAG) so we'd have a current lit review instead of citing ancient stuff.
