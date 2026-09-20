@@ -8,10 +8,10 @@
 - Need to also include any extra content before end of week 4.
 ### Formal Methods for Machine Learning
 - Deadline for **20 sept**
-	- [ ] questions for 2 papers
+	- [x] questions for 2 papers ✅ 2026-09-20
 - Deadline for **21 sept**
 	- [ ] Paper proposal
-	- [ ] Teammate wont respond to messages contact him, if no answer do yourself
+	- [x] Teammate wont respond to messages contact him, if no answer do yourself ✅ 2026-09-20
 
 ### Performance Analysis
 - Deadline for **23 sept**
