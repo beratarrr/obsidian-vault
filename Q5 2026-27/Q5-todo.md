@@ -19,4 +19,22 @@
 	- [ ] Lecture 1
 	- [ ] Lecture 2
 	- [ ] Lecture 3
-	- [ ] 
+	- For each lecture: **REALLY UNDERSTAND THE CONCEPTS AND BE ABLE TO RECREATE IT IN OTHER ENVS**
+
+### Probabilistic AI and Reasoning
+- Deadline for end of week 4
+	- [ ] Lecture 1a - 1b
+	- [ ] Lecture 3
+	- [ ] Lecture 4
+	- [ ] Lecture 5
+	- [ ] Lecture 6
+	- [ ] Lecture 7
+	- [ ] Lecture 8
+	- Including readings, after catching up, make to-do list for the extra content **REALLY UNDERSTAND THE CONCEPTS AND BE ABLE TO APPLY IT**
+
+
+- Deadline to be set 
+- [ ] Exercise sheet 1 
+- [ ] Exercise sheet 2
+- [ ] Exercise sheet 3
+- [ ] Exercise sheet 4a
