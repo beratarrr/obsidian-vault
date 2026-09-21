@@ -35,7 +35,9 @@ $$S_2(\mathbf{x}) = \frac{1}{2}\sum_{i \in \mathcal{V}} \|\nabla_i \mathbf{x}\|_
 			![[Pasted image 20260921154017.png|478]]
 			$S_2(x_1) = 0 <S_2(x_2) < S_2(x_3)$
 with $\mathbf{L} = \mathbf{D} - \mathbf{A}$. It quantifies how much the signal changes over the graph. Small means smooth.
+
 ### Tikhonov regularization
+We have a graph signal regularization problem, we have that a true graph signal $x$ is smooth over a graph, for example $S_2(x) = x^T L_x$ is low, we observe a very noisy version of the signal $y=x+n$, the goal is to recover from the observation $y$
 
 
 ### Other regularizers
