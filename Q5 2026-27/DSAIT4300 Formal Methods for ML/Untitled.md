@@ -30,6 +30,17 @@ _Paper: "Automating the Refinement of Reinforcement Learning Specifications" —
 
 1. Run the base learner, then check each arrow's success probability against a target (they use 99 percent).
 2. For any failing arrow, sample the agent's own attempts and try four fixes in a fixed order from smallest to biggest change: tighten the target and safety zones, add a waypoint, split the starting region with a dividing line, or reroute through other arrows.
+	1. The four fixes, in the fixed order AutoSpec tries them (smallest change to biggest):
+	2. **SeqRefine — tighten the target and safety zones.** Uses the agent's own runs to shrink the goal down to the part it can actually reach (the convex hull of reached states), and adds the spots where it keeps failing to the avoid zone. So "reach anywhere in this big room" becomes "reach the corner you can actually get to, and stay out of the trap." This one is made of two pieces, ReachRefine (fix the goal) and AvoidRefine (grow the avoid set).
+	3. **AddRefine — add a waypoint.** If getting from A to B directly is too hard, it inserts a midpoint stepping stone learned from the runs that did work, turning one long jump into two short ones.
+	4. **PastRefine — split the starting region.** If starting from some spots succeeds and others fail, it draws a dividing line (a hyperplane) between the good and bad starts and keeps only the good ones.
+	5. **OrRefine — open an alternative route.** If the direct step just cannot be made to work, it reroutes through other parts of the graph to reach the target another way.
+	
+	Two things worth saying alongside them in the talk:
+	
+	- It tries them **in that order and stops at the first one** that pushes the failing step above the target success rate (they use 99 percent).
+	- Every fix only ever **tightens** the task, never changes the goal, which is what their soundness theorem guarantees.
+
 3. Accept the first fix that pushes the arrow above the target, and enforce that every fix only tightens the spec so the new task still implies the original (their soundness theorem).
 4. Update the graph, relearn the affected policies, and repeat until the whole task is learned well enough. Because the underlying problem is undecidable, it is sound but not complete, so it will sometimes fail to find a fix.
 
