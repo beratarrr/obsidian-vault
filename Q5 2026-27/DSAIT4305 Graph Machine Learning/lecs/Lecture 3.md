@@ -43,9 +43,15 @@ We have a graph signal regularization problem, we have that a true graph signal 
 - we can solve the Tikhonov regularization problem
 	![[Pasted image 20260921162458.png|283]]
 - Fitting term: 
-	- signal close to observation
+	- ![[Pasted image 20260921162628.png|163]]
+		- signal close to observation
 - Regularization term
 	- ![[Pasted image 20260921162605.png|164]]
-	- desired prior, signal varition is samll in adjacent ndoes
+		- desired prior, signal varition is samll in adjacent ndoes
 
+- Scalar $\gamma > 0$ , controls the trade off 
+	- $\gamma \to 0$ we only solve fitting term - less desired prior
+	- Q: what happens for $\gamma = 0$
+	- $y>>0$ we only solve the desired prior -- less fitting
+	- Q: what happens for $\gamma \to \inf$
 ### Other regularizers
