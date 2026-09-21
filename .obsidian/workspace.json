@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Q5 2026-27/DSAIT4300 Formal Methods for ML/Digger notes.md",
+                "file": "Q5 2026-27/DSAIT4305 Graph Machine Learning/lecs/Lecture 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Digger notes"
+              "title": "Lecture 2"
             }
           }
         ]
@@ -194,9 +194,9 @@
   "active": "5de795936a7f8112",
   "lastOpenFiles": [
     "Q5 2026-27/Q5-todo.md",
-    "Q5 2026-27/DSAIT4300 Formal Methods for ML/Digger notes.md",
-    "Q5 2026-27/Q5-overzicht.md",
     "Q5 2026-27/Q5-readings.md",
+    "Q5 2026-27/Q5-overzicht.md",
+    "Q5 2026-27/DSAIT4300 Formal Methods for ML/Digger notes.md",
     "Q5 2026-27/Q5-missing-notes.md",
     "Q5 2026-27/DSAIT4315 Performance Analysis/lecs/Lecture 1.md",
     "Q5 2026-27/DSAIT4305 Graph Machine Learning/project/Project ideas.md",
