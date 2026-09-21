@@ -82,4 +82,16 @@ The goal is to approximate S_uv with dot products of the vectors. A big dot prod
 The key idea is to learn a low dimensional approximation of a node-node sim matrix S by factorisation.
 Put all vectors into one matrix Z, and then multiply Z by its tanspose after which it hodls every pairwise dot product at once, -> we want to minimize the gap to the target after
 	![[Pasted image 20260921141650.png|192]]
-	
+
+The problem with directed graphs is that the dot product does not care about order, but in a directed graph it could happen that a walk ends up in a place with no return, which the dot product alone cant see, so to fix we give each node two vectors, in other words apply the logic from NERD
+
+#### Hope
+Hope has to decide 2 things, which sim to use and how to factorize it without large cose.
+
+Which similarity: KATZ
+Count the walks between 2 nodes, but make the short walk count more:
+	$S=βA+β2A2+β3A3+⋯$
+	- $(\mathbf{A}^k)_{ij}$ is the number of walks of length $k$ from ii i to $j$.
+	- β\beta β is a discount below 1, so a walk of length $k$ is weighted by $\beta^k$ and long walks matter little.
+	- It is asymmetric: with u→w→v there is a walk from $u$ to $v$ but not the other way, so $\mathbf{S}_{uv} > \mathbf{S}_{vu}$
+	- The sum only stays finite if $β$ is small enough: $\beta < 1/\rho(\mathbf{A})$, where ρ(A)\rho(\mathbf{A}) ρ(A) is the largest absolute eigenvalue of $\mathbf{A}$ (The slide says $\beta \in (0,1)$, which is not enough on its own.)
