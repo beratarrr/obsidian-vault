@@ -41,4 +41,10 @@ Negative sampling usese a sigmoid that puts any score into a number between 0,1.
 
 ### Different types of random walks
 Based on graph semantics you can choose diff random walks:
-- Deepwalk (Unif)
+- **DeepWalk (Uniform random walk)**
+		Deepwalk takes a fixed length random walks starting at each nodes, each step is taken random, minimise the loss function
+			![[Pasted image 20260921133702.png|242]]
+		over vertex and context embeddings matrices, uses hierarchical softmax approx for› training
+- Node2Vec (Biased random walk to exploit biased breadth/depth first searches)
+	- Alos
+- NERD (Alternative walks for directed graphs)
