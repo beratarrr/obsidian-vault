@@ -10,10 +10,16 @@ Conclusion is that we have the followign observation:
 		-> We need to measure the signal variability over the graph
 
 ### Signal variation
-
+#### Over a graph
 Signals that change over the graph give off patterns that we can identify and filters that we can characterise -> initial thought is to count sign changes
 
+Gradient at a node
+Edge derivative: variation of signal x wrt an edge at node i
+		![[Pasted image 20260921153235.png|220]]
+		![[Pasted image 20260921153350.png|443]]
 
+Node gradient: vector collecting all edge derivatives for node i
+		![[Pasted image 20260921153416.png|239]]
 
 
 
