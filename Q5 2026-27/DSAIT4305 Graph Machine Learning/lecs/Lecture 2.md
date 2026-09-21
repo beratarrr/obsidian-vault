@@ -72,3 +72,12 @@ Based on graph semantics you can choose diff random walks:
 - The negative sample $w_i$  takes the same role as the positive context node. The noise distribution uses in-degree or out-degree depending on that role: $P_n(v) \propto d(v)^{3/4}$
 
 ### Matrix factorisation
+Directly factorize the node sim matrixt into embedding matrices
+
+First the target matrix is defined: 
+	S_uv is how similar u and v are
+	The simplest choice is to equal S to A (1 if there is an edeg and 0 if not)
+The goal is to approximate S_uv with dot products of the vectors. A big dot product = similar, dissimilar = small dot product
+
+The key idea is to learn a low dimensional approximation of a node-node sim matrix S by factorisation.
+Put all vectors into one matrix Z, then the 
