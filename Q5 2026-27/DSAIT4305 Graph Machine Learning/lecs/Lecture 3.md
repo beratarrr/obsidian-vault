@@ -13,16 +13,26 @@ Conclusion is that we have the followign observation:
 #### Over a graph
 Signals that change over the graph give off patterns that we can identify and filters that we can characterise -> initial thought is to count sign changes
 
-Gradient at a node
-Edge derivative: variation of signal x wrt an edge at node i
+##### Gradient at a node
+**Edge derivative:** variation of signal x wrt an edge at node i
 		![[Pasted image 20260921153235.png|220]]
 		![[Pasted image 20260921153350.png|443]]
 
-Node gradient: vector collecting all edge derivatives for node i
+**Node gradient:** vector collecting all edge derivatives for node i
 		![[Pasted image 20260921153416.png|239]]
 
+**Local variability:** norm-2 of the gradient vector
+		![[Pasted image 20260921153730.png|310]]
+			-> larger absolute delta of x on position i signal varies more around the node
+			
+**Global variation:** sum all square local variations
+		![[Pasted image 20260921153735.png|312]]
 
-
+**Signal smoothness measure:**
+		![[Pasted image 20260921153834.png|290]]
+			quantifies how much the signal changes over the graph
+			![[Pasted image 20260921154017.png|478]]
+			$S_2(x_1) = 0 <S_2(x_2) < S_2(x_3)$
 ### Tikhonov
 
 
