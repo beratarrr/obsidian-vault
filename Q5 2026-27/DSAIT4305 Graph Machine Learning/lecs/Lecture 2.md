@@ -25,4 +25,6 @@ An embedding strategy using random walk is to run short fixed-length random walk
 Given a node we want to learn a representation/embedding that contains some characteristics/are predictive of the nodes in the random walk neighbourhood.
 
 Step 1 is to first assume that the nodes in the neighbourhood are conditionally independent given the embedding
-Step 2 is then to parameterize it P(v|z_u)
+Step 2 is then to parameterize it P(v|z_u):
+![[Pasted image 20260921130737.png|343]]
+n this image p(v|z_u) is the node embedding of node u, after the equal sign is the context embedding of node v
