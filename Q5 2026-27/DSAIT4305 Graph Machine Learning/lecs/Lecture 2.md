@@ -91,7 +91,31 @@ Hope has to decide 2 things, which sim to use and how to factorize it without la
 Which similarity: KATZ
 Count the walks between 2 nodes, but make the short walk count more:
 	$S=βA+β2A2+β3A3+⋯$
-	- $(\mathbf{A}^k)_{ij}$ is the number of walks of length $k$ from ii i to $j$.
-	- β\beta β is a discount below 1, so a walk of length $k$ is weighted by $\beta^k$ and long walks matter little.
+	- $(\mathbf{A}^k)_{ij}$ is the number of walks of length $k$ from $i$ to $j$.
+	- $\beta$ is a discount below 1, so a walk of length $k$ is weighted by $\beta^k$ and long walks matter little.
 	- It is asymmetric: with u→w→v there is a walk from $u$ to $v$ but not the other way, so $\mathbf{S}_{uv} > \mathbf{S}_{vu}$
-	- The sum only stays finite if $β$ is small enough: $\beta < 1/\rho(\mathbf{A})$, where ρ(A)\rho(\mathbf{A}) ρ(A) is the largest absolute eigenvalue of $\mathbf{A}$ (The slide says $\beta \in (0,1)$, which is not enough on its own.)
+	- The sum only stays finite if $β$ is small enough: $\beta < 1/\rho(\mathbf{A})$, where $\rho(\mathbf{A})$ is the largest absolute eigenvalue of $\mathbf{A}$ (The slide says $\beta \in (0,1)$, which is not enough on its own.)
+
+How do we factorize this cheaply? The infinite sum has a compact form:
+	$S=(I−βA)−1βA=Mg−1​Ml​$
+Hope avoids building S directly which would mean inverting a big matrix and storing a dense matrix. By running generalized SVD on the two sparce matrices $M_g$ and $M_l$ and reads off $U_s$ and $U_t$ from the top singular vectors, the dense $S$ is never created
+#### Random walks versus factorization
+
+- Random walks scale better to big sparse graphs.
+- Factorization is easier to interpret, since you know exactly which matrix you are approximating.
+- Some random walk objectives secretly amount to factorizing a matrix, so the two families are closer than they look.
+
+#### What is wrong with all shallow methods
+
+1. **Too many parameters:** one vector per node, so the table grows with the graph.
+2. **No new nodes:** a node that was not in training has no column, so you cannot embed it.
+3. **No features:** node or edge information (text, age and so on) cannot be used.
+
+The suggested cure is to replace the table with a function that computes a vector from a node's features and neighbors. That leads to graph neural networks.
+
+#### Using the vectors (downstream tasks)
+
+- **Node classification:** use zi\mathbf{z}_i zi​ as input features to predict a node's label.
+- **Link prediction:** score a pair with zi⊤zj\mathbf{z}_i^\top \mathbf{z}_j zi⊤​zj​, or combine the two vectors (concatenate, multiply per coordinate, add or take the distance) and feed the result to a classifier.
+- **Clustering:** run k-means on the vectors.
+- **Graph classification:** average all node vectors into one graph vector, then classify it.
