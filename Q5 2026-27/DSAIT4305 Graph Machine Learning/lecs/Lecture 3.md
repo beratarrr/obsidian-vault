@@ -35,7 +35,7 @@ $$S_2(\mathbf{x}) = \frac{1}{2}\sum_{i \in \mathcal{V}} \|\nabla_i \mathbf{x}\|_
 			![[Pasted image 20260921154017.png|478]]
 			$S_2(x_1) = 0 <S_2(x_2) < S_2(x_3)$
 with $\mathbf{L} = \mathbf{D} - \mathbf{A}$. It quantifies how much the signal changes over the graph. Small means smooth.
-### Tikhonov
+### Tikhonov regularization
 
 
 ### Other regularizers
