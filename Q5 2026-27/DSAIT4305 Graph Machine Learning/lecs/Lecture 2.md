@@ -36,4 +36,9 @@ This needs a loss function, which is small when model gives a true neighbour a h
 ![[Pasted image 20260921132334.png|338]]
 
 A way to tackle this problem is **Negative sampling**, this changes up the questions, instead of "how does v comapre against everyone" we ask "is b a real neighbou or a randomly picked stranger", for each real pair we then pick k random nodes as fake pairs![[Pasted image 20260921132542.png|374]]
-Negative sampling usese a sigmoid that puts any score into a number between 0,1. Which gives the possibility of a pair being real. The first term rewards a high score for the real pair, the second rewards a low score for each fake pair, not the whole graph doesnt get recalculated only 1+k nodes each update.
+Negative sampling usese a sigmoid that puts any score into a number between 0,1. Which gives the possibility of a pair being real. The first term rewards a high score for the real pair, the second rewards a low score for each fake pair, not the whole graph doesnt get recalculated only 1+k nodes each update. SO basically it uses a small random sample instead of the whole graph to compare to the chosen real neighbour .
+
+
+### Different types of random walks
+Based on graph semantics you can choose diff random walks:
+- Deepwalk (Unif)
