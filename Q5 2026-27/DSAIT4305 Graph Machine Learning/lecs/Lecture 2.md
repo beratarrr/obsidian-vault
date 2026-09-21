@@ -80,4 +80,6 @@ First the target matrix is defined:
 The goal is to approximate S_uv with dot products of the vectors. A big dot product = similar, dissimilar = small dot product
 
 The key idea is to learn a low dimensional approximation of a node-node sim matrix S by factorisation.
-Put all vectors into one matrix Z, then the 
+Put all vectors into one matrix Z, and then multiply Z by its tanspose after which it hodls every pairwise dot product at once, -> we want to minimize the gap to the target after
+	![[Pasted image 20260921141650.png|192]]
+	
