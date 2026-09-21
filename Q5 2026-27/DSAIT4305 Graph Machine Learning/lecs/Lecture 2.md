@@ -70,3 +70,5 @@ Based on graph semantics you can choose diff random walks:
 		$\mathcal{L}\big(u^{(r_1)}, v^{(r_2)}\big) = -\log \sigma\big(\mathbf{z}_u^{(r_1)\top} \mathbf{z}_v^{(r_2)}\big) - \sum_{i=1}^{k} \log \sigma\big(-\mathbf{z}_u^{(r_1)\top} \mathbf{z}_{w_i}^{(r_2)}\big)$
 
 - The negative sample $w_i$  takes the same role as the positive context node. The noise distribution uses in-degree or out-degree depending on that role: $P_n(v) \propto d(v)^{3/4}$
+
+### Matrix factorisation
