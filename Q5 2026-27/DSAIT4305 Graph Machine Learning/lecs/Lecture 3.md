@@ -39,5 +39,13 @@ with $\mathbf{L} = \mathbf{D} - \mathbf{A}$. It quantifies how much the signal c
 ### Tikhonov regularization
 We have a graph signal regularization problem, we have that a true graph signal $x$ is smooth over a graph, for example $S_2(x) = x^T L_x$ is low, we observe a very noisy version of the signal $y=x+n$, the goal is to recover from the observation $y$
 
+- Because the noise is random, it has high variability
+- we can solve the Tikhonov regularization problem
+	![[Pasted image 20260921162458.png|283]]
+- Fitting term: 
+	- signal close to observation
+- Regularization term
+	- ![[Pasted image 20260921162605.png|164]]
+	- desired prior, signal varition is samll in adjacent ndoes
 
 ### Other regularizers
