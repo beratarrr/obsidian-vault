@@ -23,7 +23,7 @@ Signals that change over the graph give off patterns that we can identify and fi
 
 **Local variability:** norm-2 of the gradient vector
 		![[Pasted image 20260921153730.png|310]]
-			-> larger absolute delta of x on position i signal varies more around the node
+			-> 
 			
 **Global variation:** sum all square local variations
 		![[Pasted image 20260921153735.png|312]]
@@ -33,6 +33,8 @@ Signals that change over the graph give off patterns that we can identify and fi
 			quantifies how much the signal changes over the graph
 			![[Pasted image 20260921154017.png|478]]
 			$S_2(x_1) = 0 <S_2(x_2) < S_2(x_3)$
+
+
 ### Tikhonov
 
 
