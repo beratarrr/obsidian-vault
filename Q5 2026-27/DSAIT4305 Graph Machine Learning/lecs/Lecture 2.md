@@ -43,11 +43,16 @@ Negative sampling usese a sigmoid that puts any score into a number between 0,1.
 Based on graph semantics you can choose diff random walks:
 - **DeepWalk (Uniform random walk)**
 		Fixed-length walks starting at every node.
-		At each step the next node is chosen uniformly among the current node's neighbors:  $\mathbf{D}^{-1}\mathbf{W}$, so \mathbf{P}_{uv} = \mathbf{A}_{uv} / \sum_v \mathbf{A}_{uv} Puv​=Auv​/∑v​Auv​.
-		A sliding window over each walk produces the training pairs. Example with window size 2 on C→A→B→D→F→EC \to A \to B \to D \to F \to E C→A→B→D→F→E: anchor BB B gives (B,C),(B,A),(B,D),(B,F)(B,C), (B,A), (B,D), (B,F) (B,C),(B,A),(B,D),(B,F).
-		Loss, minimized over the vertex matrix Z\mathbf{Z} Z and the context matrix $\mathbf{Z}'$:
+		At each step the next node is chosen uniformly among the current node's neighbors:  $\mathbf{D}^{-1}\mathbf{W}$, so $\mathbf{P}_{uv} = \mathbf{A}_{uv} / \sum_v \mathbf{A}_{uv}$ 
+		A sliding window over each walk produces the training pairs. Example with window size 2 on C→A→B→D→F→E: anchor B gives (B,C), (B,A), (B,D), (B,F)
+		Loss, minimized over the vertex matrix $\mathbf{Z}$ and the context matrix $\mathbf{Z}'$:
 			![[Pasted image 20260921133702.png|242]]
-		over vertex and context embeddings matrices, uses hierarchical softmax approx for› training
+		Trained with hierarchical softmax: nodes are leaves of a binary tree, and $P(v \mid \mathbf{z}_u)$ becomes a product of about $\log N$  binary decisions along the path to $v$ This replaces the $O(N)$ denominator with $O(\log N)$work.
 - Node2Vec (Biased random walk to exploit biased breadth/depth first searches)
-	- Also fixed length bokut the way it differs from deepwalk is the fact the walk has two dials, for any edge compute the transition probability that the walk continues or takes a step back. Training pair (u,v)  where u is the anchor node and v is context, it uses negative sampling approx for trainging, vertex embeds are used for downstream tasks(?a)
+		Also fixed-length walks from every node, but the walk is second order: the next step depends on the current node $v$ and on the node $t$ it just came from.
+		For each neighbor $x$ of $v$ the unnormalized transition weight is:
+		![[Pasted image 20260921135157.png|514]]
+		where $d_{tx}$​ is the shortest-path distance between tt t and $x$. The weights are normalized over the neighbors of $v$.
+		I
+
 - NERD (Alternative walks for directed graphs)
