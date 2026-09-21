@@ -1,3 +1,12 @@
+
+Skeleton: 
+- **Problem:** what is given and what do we want?
+- **Assumption:** what do we believe about the true signal, and why is that plausible?
+- **Objective:** the formula, with one line per term saying what it does.
+- **Solution:** how do we get x^\hat{\mathbf{x}} x^, and what are the steps?
+- **Behavior:** what happens at the extremes of the knob (γ\gamma γ)?
+- **Open questions:** what did you not understand?
+
 ### Motivation
 
 There is different signal behavior over graphs in real applications, such as measureemnts in sensor networks, where neighbouring nodes tend to have similar values/labels
