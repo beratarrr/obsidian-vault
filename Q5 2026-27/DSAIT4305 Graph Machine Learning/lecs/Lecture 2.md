@@ -30,5 +30,10 @@ Step 2 is then to parameterize it P(v|z_u):
 This formula makes all the scores positive by taking exp, and then divide it by the total so they add up to 1, in other words turn the numbers we have into probabilities.
 
 ## Optimization objective
-Now we optimize the embeddings Z to maximize the likelihood of random walk cooccurrences
-This needs a loss function for 
+
+Now we optimize the embeddings Z to maximize the likelihood of random walk co-occurrences
+This needs a loss function, which is small when model gives a true neighbour a high prob and large when it did not -> this loss function leaves us with a problem -> bc the denominator adds scores over ALL nodes, it has to be recomputed for every pair -> millions nodes -> millions operations per pair
+![[Pasted image 20260921132334.png|338]]
+
+A way to tackle this problem is **Negative sampling**, this changes up the questions, instead of "how does v comapre against everyone" we ask "is b a real neighbou or a randomly picked stranger", for each real pair we then pick k random nodes as fake pairs![[Pasted image 20260921132542.png|374]]
+Negative sampling usese a sigmoid that puts any score into a number between 0,1. Which gives the possibility of a pair being real. The first term rewards a high score for the real pair, the second rewards a low score for each fake pair, not the whole graph doesnt get recalculated only 1+k nodes each update.
