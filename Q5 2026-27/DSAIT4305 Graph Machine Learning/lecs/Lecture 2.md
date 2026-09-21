@@ -43,16 +43,30 @@ Negative sampling usese a sigmoid that puts any score into a number between 0,1.
 Based on graph semantics you can choose diff random walks:
 - **DeepWalk (Uniform random walk)**
 		Fixed-length walks starting at every node.
+		-
 		At each step the next node is chosen uniformly among the current node's neighbors:  $\mathbf{D}^{-1}\mathbf{W}$, so $\mathbf{P}_{uv} = \mathbf{A}_{uv} / \sum_v \mathbf{A}_{uv}$ 
+		-
 		A sliding window over each walk produces the training pairs. Example with window size 2 on C→A→B→D→F→E: anchor B gives (B,C), (B,A), (B,D), (B,F)
+		- 
 		Loss, minimized over the vertex matrix $\mathbf{Z}$ and the context matrix $\mathbf{Z}'$:
 			![[Pasted image 20260921133702.png|242]]
 		Trained with hierarchical softmax: nodes are leaves of a binary tree, and $P(v \mid \mathbf{z}_u)$ becomes a product of about $\log N$  binary decisions along the path to $v$ This replaces the $O(N)$ denominator with $O(\log N)$work.
-- Node2Vec (Biased random walk to exploit biased breadth/depth first searches)
+- **Node2Vec (Biased random walk to exploit biased breadth/depth first searches)**
 		Also fixed-length walks from every node, but the walk is second order: the next step depends on the current node $v$ and on the node $t$ it just came from.
+		-
 		For each neighbor $x$ of $v$ the unnormalized transition weight is:
 		![[Pasted image 20260921135157.png|514]]
 		where $d_{tx}$​ is the shortest-path distance between tt t and $x$. The weights are normalized over the neighbors of $v$.
-		I
+		-
+		If the walk stays close to its starts it behaves BFS-like and captures local structure and structural roles. If it goes deeper it behaves DFS-like and captures broader community structure. Small q = move outwards, larger q = stay close
+- **NERD (alternating walks for directed graphs)**
+		Problem with DeepWalk and node2vec on directed graphs: walks can enter regions with no outgoing edges and leave neighborhoods unexplored, and a single embedding is direction-agnostic. It cannot encode that edge C→AC exists while A→CA does not.
+		- 
+		Each node gets two embeddings, one as a source and one as a target, stored in separate matrices $\mathbf{Z}^{(\text{source})}$ and $\mathbf{Z}^{(\text{target})}$.
+		-
+		Walks alternate roles. A source walk such as C→A←B→D←F→EC goes source → target → source → target. A target walk starts from a node in the target role.
+		Loss for roles $r_1, r_2 \in \{\text{source}, \text{target}\}$:
+		
+		$\mathcal{L}\big(u^{(r_1)}, v^{(r_2)}\big) = -\log \sigma\big(\mathbf{z}_u^{(r_1)\top} \mathbf{z}_v^{(r_2)}\big) - \sum_{i=1}^{k} \log \sigma\big(-\mathbf{z}_u^{(r_1)\top} \mathbf{z}_{w_i}^{(r_2)}\big)$
 
-- NERD (Alternative walks for directed graphs)
+- The negative sample $w_i$  takes the same role as the positive context node. The noise distribution uses in-degree or out-degree depending on that role: $P_n(v) \propto d(v)^{3/4}$
