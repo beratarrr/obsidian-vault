@@ -46,5 +46,5 @@ Based on graph semantics you can choose diff random walks:
 			![[Pasted image 20260921133702.png|242]]
 		over vertex and context embeddings matrices, uses hierarchical softmax approx for› training
 - Node2Vec (Biased random walk to exploit biased breadth/depth first searches)
-	- Alos
+	- Also fixed length but the way it differs from deepwalk is the fact the walk has two dials, for any edge compute the transition probability that the walk continues or takes a step back. Training pair (u,v)  where u is the anchor node and v is context, it uses negative sampling approx for trainging, vertex embeds are used for downstream tasks(?a)
 - NERD (Alternative walks for directed graphs)
